@@ -35,8 +35,6 @@ Nota: la primera vez se descargará automáticamente el léxico de VADER de nltk
 ### 4. Ejecuta la aplicación
 
 ```bash
-Copiar
-Editar
 streamlit run sentimientos.py
 ```
 ---
