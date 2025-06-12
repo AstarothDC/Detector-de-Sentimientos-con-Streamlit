@@ -1,76 +1,46 @@
 # 💬 Análisis de Sentimientos con VADER y Streamlit
 
-Este proyecto es una aplicación web simple para realizar análisis de sentimientos usando el analizador VADER de `nltk`, desplegada con la biblioteca `streamlit`.
-
-VADER (Valence Aware Dictionary and sEntiment Reasoner) es un modelo basado en reglas, especialmente adecuado para textos cortos e informales como comentarios, redes sociales y reseñas.
+Este proyecto es una **aplicación web interactiva** desarrollada con **Streamlit**, que utiliza el analizador de sentimientos **VADER** de `nltk` para evaluar texto ingresado por el usuario. No requiere conexión a modelos externos ni servicios de pago: es **100% local, gratuito y ligero**, ideal para proyectos educativos o prototipos rápidos.
 
 ---
 
-## 🚀 Funcionalidades
+## 🧠 Tecnologías utilizadas
 
-- Analiza textos y proporciona una puntuación de sentimiento:
-  - Positivo 😊
-  - Negativo 😠
-  - Neutral 😐
-- Interfaz simple y amigable construida con Streamlit.
-- Resultados inmediatos con un solo clic.
+- **Streamlit** – Framework para crear apps web en Python
+- **VADER (nltk)** – Analizador de sentimientos basado en reglas
+- **Python 3.8+**
+- **NLTK** – Biblioteca de procesamiento de lenguaje natural
 
 ---
 
-## 📦 Requisitos
+## 🚀 Cómo usar
 
-- Python 3.7+
-- pip
-
-### 🧰 Instalación de dependencias
+### 1. Clona el repositorio
 
 ```bash
-pip install streamlit nltk
-Además, asegúrate de descargar el léxico de VADER (esto se hace automáticamente en la app, pero también puedes hacerlo manualmente):
-
-python
+git clone https://github.com/AstarothDC/Detector-de-Sentimientos-con-Streamlit
+cd Detector-de-Sentimientos-con-Streamlit
+2. Crea un entorno virtual
+bash
 Copiar
 Editar
-import nltk
-nltk.download('vader_lexicon')
-📝 Uso
-Guarda el archivo principal como sentimientos.py.
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+3. Instala las dependencias
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+Nota: la primera vez se descargará automáticamente el léxico de VADER de nltk.
 
-Abre tu terminal en la carpeta del proyecto.
-
-Ejecuta la aplicación con:
-
+4. Ejecuta la aplicación
 bash
 Copiar
 Editar
 streamlit run sentimientos.py
-Se abrirá una pestaña en tu navegador. Ingresa un texto y haz clic en "Analizar Sentimiento".
 
-📋 Ejemplo
-Entrada de texto:
+---
 
-r
-Copiar
-Editar
-¡Este proyecto es increíble! Me encanta cómo funciona.
-Resultado:
+## Créditos
 
-compound: 0.7783
-
-Sentimiento: Positivo 😊
-
-📁 Estructura del Proyecto
-bash
-Copiar
-Editar
-análisis-sentimientos-vader/
-│
-├── sentimientos.py        # Código principal de la app
-└── README.md              # Este archivo
-🧠 Notas
-VADER está optimizado para inglés. Si deseas un análisis para español, se recomienda traducir el texto o utilizar otros modelos como BERT, TextBlob-es, o modelos entrenados con datasets en español.
-
-Este proyecto está enfocado en la simplicidad y rapidez.
-
-🧠 Créditos
-Desarrollado por Ing. Dilan Cabas / GitHub
+Desarrollado por [Ing. Dilan Cabas / GitHub](https://github.com/AstarothDC)  
