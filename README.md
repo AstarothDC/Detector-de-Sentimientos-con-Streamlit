@@ -20,25 +20,25 @@ Este proyecto es una **aplicación web interactiva** desarrollada con **Streamli
 ```bash
 git clone https://github.com/AstarothDC/Detector-de-Sentimientos-con-Streamlit
 cd Detector-de-Sentimientos-con-Streamlit
-2. Crea un entorno virtual
-bash
-Copiar
-Editar
+```
+### 2. Crea un entorno virtual
+
+```bash
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
-3. Instala las dependencias
-bash
-Copiar
-Editar
+```
+### 3. Instala las dependencias
+```bash
 pip install -r requirements.txt
 Nota: la primera vez se descargará automáticamente el léxico de VADER de nltk.
+```
+### 4. Ejecuta la aplicación
 
-4. Ejecuta la aplicación
-bash
+```bash
 Copiar
 Editar
 streamlit run sentimientos.py
-
+```
 ---
 
 ## Créditos
